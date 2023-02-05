@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./img/logo.svg" alt="" class="logo">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Acerca de mí</a></li>
+                    <li><a href="#portfolio">Proyectos</a></li>
+                    <li><a href="#pasatiempos">Pasatiempos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <img class="fas" src="./img/salir.svg" alt="" onclick="closemenu()">
+                </ul>
+                <img class="fas menu" src="./img/menu.svg" alt="" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                
+                <h2>Hola, soy <br> <span>Ricardo</span> Luzquiños</h2>
+                <p>Estudiante de <span>Ingeniería</span> de Sistemas</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ ABOUT---------------------------------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/ricFrente.jpeg" alt="about me">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">Acerca de mí</h2>
+                    <p>Me llamo Ricardo, soy estudiante de la carrera profesional de Ingeniería de Sistemas. Es mi segunda carrera profesional, y estoy muy emocionado de incursionar en el mundo de TI.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                        <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="habilidades">
+                        <ul>
+                            <li><span>Front</span><br>HTML, CSS, Javascript
+                            <br>Contacto con Angular, React, Sass</li>
+                            <li><span>Back</span><br>Java
+                            <br>Contacto con C#, .Net</li>
+                            <li><span>Base de datos</span><br>SQL Server, MySql</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiencia">
+                        <ul>
+                            <li>Buscando prácticas pre profesionales y/o trainnig...</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educacion">
+                        <ul>
+                            <li><span>Estudios Superiores</span>
+                                <br>- (Actualidad) Ingeniería de Sistemas UPC Peruana de Ciencias Aplicadas - 7mo Ciclo 
+                                <br>- (2014)Comercio y Negocios Internacionales - Universidad Nacional Pedro Ruiz Gallo</li>
+                            <li><span>Cursos</span>
+                                <br>- (2022) Java 17 Web Developer - Cibertec
+                                <br>- (2022) SQL y modelamiento de datos - SQL Server 2019 - Cibertec
+                                <br>- (2022) Ensamblaje de PC y Diagnóstico de Redes - Cibertec
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------porfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">Mis Proyectos</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/miSitio.png" alt="">
+                    <div class="layer">
+                        <h3>Mi propio Sitio Web</h3>
+                        <p>Desarrollado desde cero con HTML, CSS y Javascript. Se hizo adaptable para dispositivos móviles.</p>
+                        
+                         <a href="#"><img class="icon" src="./img/hand.svg" alt=""></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/trabajo02.jpg" alt="">
+                    <div class="layer">
+                        <h3>Próximamente más proyectos...</h3>
+                        <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, pariatur.</p>
+                         <a href="#"><img class="icon" src="img/hand.svg" alt=""></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img  src="./img/trabajo03.jpg" alt="">
+                    <div class="layer">
+                        <h3>Próximamente más proyectos...</h3>
+                        <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, pariatur.</p>
+                         <a href="#"><img class="icon" src="img/hand.svg" alt=""></a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <a class="btn" href="#">Ver más</a> -->
+        </div>
+    </div>
+
+    <!-- ---------------------------Pasatiempos--------------- -->
+    <div id="pasatiempos">
+        <div class="container">
+            <h2 class="sub-title">Hobbies y pasatiempos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./img/hobbie bateria.jpg" alt="movies">
+                    <h3>Tocar batería</h3>
+                    <p>Desde muy pequeño, apasionado por la música e instrumentos de percusión...</p>
+                </div>
+                <div class="card">
+                    <img src="./img/hobbie movies.jpg" alt="movies">
+                    <h3>Pelis y series</h3>
+                    <p>Una buena peli en casa o en el cine...</p>
+                </div>
+                <div class="card">
+                    <img src="./img/hobbie libro.jpg" alt="movies">
+                    <h3>Leer</h3>
+                    <p>Libros de finanzas, tendencias tecnológicas, desarrollo y superación personal...</p>
+                </div>
+                <div class="card">
+                    <img src="./img/hobbie videogames.jpg" alt="movies">
+                    <h3>Video juegos con los amigos</h3>
+                    <p>Rocket League, GTA V, Fifa y PES son algunos de mis favoritos...</p>
+                </div>
+                <div class="card">
+                    <img src="./img/hobbie viajes.jpg" alt="movies">
+                    <h3>Viajar</h3>
+                    <p>Ciudades nuevas, circuitos de playas, naturaleza...</p>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------------ CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Trabajemos y tomemos un café...</h2>
+                    <div class="social-icons">
+                        <a href="https://github.com/RicLuzquinosC" target="_blank" rel="noopener noreferrer"><img src="./img/github.svg" alt="github logo"></a>
+                        <a href="https://www.linkedin.com/in/ricardoluzquinosc/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.svg" alt="linkedin logo"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100016891359542" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.svg" alt="Facebook logo"></a>
+                        <a href="https://www.instagram.com/ricardo.luzquinos/" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.svg" alt="instagram logo"></a>
+                        <a href="https://www.youtube.com/channel/UCG7ooHXXeh2NKjnKctpL_nQ" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.svg" alt="linkedin logo"></a>
+                        
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Tu nombre" required >
+                        <input type="email" name="Email" placeholder="Tu Email" required >
+                        <textarea name="Message" rows="6" placeholder="Tu mensaje"></textarea>
+                        <button class="btn btn2" type="submit" >Enviar</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ricardo. Hecho con Easy Tutorials</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+       
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="-60px";
+        }
+        function closemenu(){
+            sidemenu.style.right="-300px";
+        }
+
+    </script>
+
+    
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwPRR_6Kihy9yeHtL9ZIrxHBDN6jVdWy8clj3qT6XGDExq--NwsnF5NOQq5cZ7C98E7-w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Mensaje enviado!"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
