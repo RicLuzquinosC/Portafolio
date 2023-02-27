@@ -43,6 +43,7 @@ nav{
     flex-wrap: wrap;
 }
 
+
 .logo{
     width: 35px;
 }
@@ -89,9 +90,29 @@ nav ul li a:hover::after{
     font-size: 50px;
     margin-top: 20px;
 }
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 .header-text p{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 25px;
     margin-top: 20px;
+    border-right: .15em solid white;
+    animation: typing 4s steps(37) 1s 1 normal both,blink 1s steps(1) infinite;
+    
 }
 
 .header-text h2 span{
@@ -100,7 +121,10 @@ nav ul li a:hover::after{
 
 
 /* ------------ABOUT--------------- */
-
+.about-col-2 p{
+       
+    text-align: justify;
+}
 #about{
     
     padding: 80px 0;
@@ -483,6 +507,7 @@ nav .fas{
         font-size: 14px;
     }
     .about-col-2 p{
+       
         text-align: justify;
     }
     .tab-links{
