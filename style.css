@@ -397,6 +397,10 @@ span{
     right: 5%;
 }
 /* ------------pasatiempos----------- */
+.card a{
+    text-decoration: none;
+}
+
 #pasatiempos{
     margin-top: 70px;
 }
